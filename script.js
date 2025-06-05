@@ -12,7 +12,6 @@ const noTexts = [
     "只给你一个人奶",
     "求你啦！"
 ];
-
 const imgArr = [
     "image/jett.webp",
     "image/cypher.webp",
@@ -37,7 +36,7 @@ noButton.addEventListener("click", function() {
 
     // 图片变化
     if (clickCount <= imgArr.length) {
-        mainImage.src = imgArr[Math.min(clickCount - 1, imgArr.length - 1)];
+        mainImage.src = "https://gitee.com/xdsun777/staticimage/raw/master/"+imgArr[Math.min(clickCount - 1, imgArr.length - 1)];
     }
 });
 
@@ -45,7 +44,7 @@ yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
             <h1 class="yes-text">超级爱你！</h1>
-            <img src="image/kjraze.webp" alt="拥抱" class="yes-image">
+            <img src="https://gitee.com/xdsun777/staticimage/raw/master/image/kjraze.webp" alt="拥抱" class="yes-image">
         </div>
     `;
     document.body.style.overflow = "hidden";
